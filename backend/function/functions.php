@@ -1609,16 +1609,17 @@ function sendEmailWithAttachment($message, $subject = 'Lead from Hancock Publish
 // SEND SLACK
 function sendSlack($data)
 {
-    $ch = curl_init('https://hooks.slack.com/services/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');
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data); // JSON string
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
+    // $connection2 = new mysqli("localhost", "root", "", "animation");
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, 'https://hooks.slack.com/services/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');
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, ['payload' => $data]);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($ch);
+    $server_output = curl_exec($ch);
     curl_close($ch);
-    return $response;
+    // mysqli_query($connection2, "INSERT INTO slack(error,slack_payload) VALUES('$server_output','$data')") or die(mysqli_error($connection2));
+    return ($server_output);
 }
-
 
 // CLEAN FUNCTION
 function clean($string)
