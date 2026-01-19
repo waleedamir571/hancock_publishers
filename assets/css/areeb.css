@@ -1,0 +1,357 @@
+.imgoverlay_2 {
+    background-image: url('../imgs/home/whatweoffer.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+  }
+  .sliderbg {
+    background-image: url(../imgs/home/sliderbg.png);
+    background-repeat: no-repeat;
+    background-color: #EC6613;
+    background-position: auto;
+    background-size: cover;
+  }
+  .torchback {
+    background-image: url(../imgs/audio_book/torchbck.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 210px;
+    padding-bottom: 150px;
+}
+.adjst {
+    padding-top: 29px;
+    padding-left: 235px;
+}
+  .text-white {
+    color: #ffff;
+  }
+  .pt-86 {
+    padding-top: 65px;
+}
+
+.owl-nav {
+    display: none !important;
+}
+.text-black {
+    color: black;
+}
+
+.audio-card {
+    width: 100%;
+    margin-top: -94px !important;
+    padding-bottom: 15px;
+    position: absolute !important;
+    background-image: none !important;
+    background: none !important;
+    padding-top: 0px !important;
+}
+.modal-content1 {
+    position: relative;
+    background-image: url(../imgs/Halloween.png);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    z-index: 99;
+}
+.modal-header .close { 
+    width: 45px;
+    height: 45px;
+    display: block;
+    position: absolute;
+    top: -18px;
+    right: -20px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #222;
+    padding-top: 3px;
+    background-color: #ffc600;
+    text-align: center;
+    border-radius: 50px;
+    align-items: center;
+    display: grid;
+    /* border: inset 3px #7f6303; */
+    border: 2px solid #7f6303;
+    z-index: 9999999;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 1 !important;
+    
+}
+.mt-460 {
+    margin-top: 460px;
+}
+.section2 {
+    background-image: url(../imgs/audio_book/section2.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .bg-grey {
+        background-image: url(../imgs/audio_book/audiobeats.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding-top: 160px;
+        padding-bottom: 180px;
+    }
+
+
+.color-green {
+    color: #00AFA4;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
+.list_book {
+    list-style-image: url(../imgs/book-design/Circledot.png);
+    padding-left: 20px;
+}
+.img-box {
+    background-image: url(../imgs/book-design/Borderbox.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 43%;
+    padding: 13px;
+}
+.offer-content {
+    top: 130% !important;
+    width: 96% !important;
+    padding-top: 0px;
+    overflow: auto;
+    height: 157px;
+    padding-left: 50px;
+    font-size: 23px;
+}
+.pl-45 {
+    padding-left: 50px;
+}
+.bluecolor {
+    color: #26B7AB;
+}
+.bggrey {
+    background-color: #E6E6E6;
+}
+.btn-success_2 { 
+
+        color: #fff !important;
+        background-color: #00AFA4;
+        border-color: #00AFA4;
+        border-radius: 10px;
+        width: 65%;
+        height: 45px;
+        margin-top: 1px;
+        font-size: 24px;
+        padding: 1px;
+    
+}
+.btn-success_2:hover {
+    background-color: #000;
+    color: #ffff;
+    text-decoration: none;
+}
+.fw-700 {
+    font-weight: 600;
+}
+.greenbg1 {
+    background-image: url(../imgs/self_publishing/backimg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 101%;
+    padding-top: 100px;
+    padding-bottom: 150px
+  }
+  .faqsect {
+    background-image: url(../imgs/self_publishing/faqsection.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .pl-20 {
+    padding-left: 24px;
+}
+.btn-default_8 {
+    background: url(../imgs/self_publishing/getstbtn.png) no-repeat;
+    background-size: 100% 112%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+  }
+  .btn-default_9 {
+    background: url(../imgs/self_publishing/livechatbtn.png) no-repeat;
+    background-size: 100% 112%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+  }
+  .margin {
+    margin-top: -20px;
+  }
+  .lh-43 {
+    line-height: 44px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.imagecall {
+    padding-top: 100px;
+}
+  @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    .mb-pt-40 {
+        padding-top: 76px;
+        padding-left: 143px;
+    }
+    .margin {
+        margin-top: 0px;
+      }
+    .fs-25 {
+        font-size: 20px !important;
+    }
+    .fs-28 {
+        font-size: 22px !important;
+    }
+    .pl-45 {
+        padding-left: 37px;
+    }
+    .offer-content {
+        top: 130% !important;
+        width: 91% !important;
+        padding-top: 0px;
+        overflow: auto;
+        height: 95px;
+        padding-left: 38px;
+        font-size: 17px;
+    }
+    .fs-23m {
+        font-size: 17px !important;
+    }
+    .fs-30 {
+        font-size: 20px;
+    }
+    .btn-success_2 {
+        width: 44%;
+        height: 40px;
+    }
+    .fs-45 {
+        font-size: 40px;
+      }
+      .fs-34 {
+        font-size: 27px;
+    }
+    .fs-48 {
+        font-size: 40px !important;
+    }
+    .lh-50 {
+        line-height: 50px !important;
+    }
+    .fs-18 {
+        font-size: 17px;
+    }
+    .greenbg1 {
+        background-size: 133% 103%;
+    }
+    .best_selling1 {
+        background-image:none !important;
+
+    }
+    .faqsect {
+
+        background-size: 131% 100% !important;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+
+    .bg-grey {
+        padding-top: 188px;
+        padding-bottom: 200px;
+    }
+    .section2 {
+
+        background-size: contain;
+    }
+  
+
+}
+@media only screen and (min-width: 320px) and (max-width: 660px) { 
+.bg-grey{
+    background-image: none;
+    background-color: #E6E6E6;
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
+.greenbg1 {
+    background-image: none;
+    background-color: #26B7AB;
+}
+
+.fs-30 {
+    font-size: 18px !important;
+}
+.section2 {
+    background-image: none;
+}
+.bgcolor {
+    background-image: none !important;
+    background-color: #E6E6E6;
+}
+.mt-460 {
+    margin-top: 0px;
+}
+.imgoverlay_2 {
+    background-image: url(../imgs/home/wfdshatweoffer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.modal-content1 {
+    position: relative;
+    background-color: white !important;
+    background-image: url(../imgs/Hallowefgen.png);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    z-index: 99;
+}
+.pt-86 {
+    padding-top: 30px;
+}
+.pt-mb-10 {
+    padding-bottom: 20px;
+}
+.torchback {
+    background-image: none !important;
+    padding-top: 55px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.center-txt{
+    text-align: center;
+}
+}

@@ -1,0 +1,156 @@
+/* Add these styles to your stylesheet */
+
+.pt-4rem {
+  padding-top: 4rem !important;
+}
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  z-index: 99;
+  /* max-width: 1320px; */
+  margin: auto;
+}
+
+.navbar-nav {
+  background-color: transparent;
+  /* Set the background color of the navigation links to transparent */
+}
+
+.nav-item {
+  padding: 0 50px;
+}
+
+.navbar a.navbar-brand img {
+  max-width: 100%;
+  /* Make sure the logo within the navigation takes 100% width */
+}
+
+.nav-links {
+  background-color: transparent;
+  /* Set the background color of the navigation links container to transparent */
+}
+
+.navcustom {
+  position: relative;
+  /* Ensure the container has a position other than static */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #000000;
+}
+
+#main_nav {
+  /* padding-top: 2rem; */
+  position: relative;
+  left: 5rem;
+}
+
+.shadow-sm #main_nav {
+  padding-top: 0px;
+  left: 12.5rem;
+}
+
+.shadow-sm .nav-item {
+  padding: 0 32px;
+}
+
+.logo {
+  padding-top: 1rem;
+}
+
+.shadow-sm .logo {
+  padding: 0;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #F24405;
+}
+
+@media all and (min-width: 992px) {
+  .dropdown-menu {
+    width: 13rem;
+  }
+
+  .mega-submenu {
+    left: 100%;
+    top: 0;
+    min-width: 25rem;
+  }
+
+  .ktm-mega-menu {
+    position: static;
+  }
+
+  .mega-menu {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .dropdown-menu li {
+    position: relative;
+  }
+
+  .dropdown-menu .submenu {
+    display: none;
+    left: 100%;
+    top: 0;
+  }
+
+  .dropdown-menu>li:hover>.submenu,
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width:800px) {
+  .navbar {
+    background-color: transparent;
+    /* Set the background color to transparent */
+  }
+
+  .pt-4 {
+    padding-top: 0 !important;
+  }
+
+  .navbar-nav {
+    background-color: #ffffff;
+    padding: 10px 0px 10px 0px !important;
+    /* Set the background color of the navigation links to transparent */
+  }
+
+  #main_nav {
+    background-color: #ffffff;
+    padding-top: 0;
+    position: static;
+  }
+
+  .shadow-sm .logo {
+    padding: 0 10px;
+    margin-top: 0;
+  }
+
+  .shadow-sm .logo img {
+    max-width: 8rem;
+  }
+
+  button.navbar-toggler {
+    background-color: #F24405;
+  }
+
+  .sidebar-logo .logo-name,
+  .logo {
+    padding: 20px 0px 0px 20px;
+    margin-top: -70px;
+  }
+
+  .nav-item {
+    padding: 0 30px;
+  }
+}

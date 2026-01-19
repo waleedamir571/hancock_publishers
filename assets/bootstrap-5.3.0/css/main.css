@@ -1,0 +1,146 @@
+
+@font-face {
+  font-family: 'just-sans-regular';
+  src: url('../fonts/just-sans/webfont.eot');
+  src: url('../fonts/just-sans/webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/just-sans/webfont.woff2') format('woff2'),
+       url('../fonts/just-sans/webfont.woff') format('woff'),
+       url('../fonts/just-sans/webfont.ttf')  format('truetype'),
+       url('../fonts/just-sans/webfont.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'just-sans-bold';
+  src: url('../fonts/just-sans/webfont.eot');
+  src: url('../fonts/just-sans/webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/just-sans/webfont.woff2') format('woff2'),
+       url('../fonts/just-sans/webfont.woff') format('woff'),
+       url('../fonts/just-sans/webfont.ttf')  format('truetype'),
+       url('../fonts/just-sans/webfont.svg#svgFontName') format('svg');
+}
+
+/* @font-face {
+    font-family: 'just-sans';
+    src: url(../fonts/justSansExBold.otf);
+    font-weight: 900;
+} */
+
+* {
+    font-family: 'just-sans-regular';
+}
+
+.bg-primary {
+    background-color: #F24405 !important;
+}
+
+.text-primary {
+    color: #F24405 !important;
+}
+
+.section, section {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.main-btn {
+    padding: 8px 36px;
+    border-radius: 50rem !important;
+    color: #fff!important;
+    text-decoration: none!important;
+    background-color: #F24405;
+    font-weight: 900;
+}
+
+.vertical-spacing{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+nav {
+    transition: all 0.3s ease;
+}
+
+.navbar-nav{
+    gap: 70px;
+}
+
+.nav-underline-tabs li a{
+    color: #646464;
+    font-size: 20px;
+}
+
+.nav-underline-tabs li a.active{
+    color: #000;
+    font-weight: bold;
+    border-bottom: 2px solid #6F559B;
+}
+
+h1,h2,h3,h4 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.border-bottom-primary{
+    box-shadow: 0px 3px 0px #F24405;
+}
+
+.card {
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.portfolio-radius {
+    border-radius: 41px;
+}
+
+.portfolio-radius-top {
+    border-top-left-radius: 41px;
+    border-top-right-radius: 41px;
+}
+
+/* -------------------------- Header -------------------------- */
+.masthead {
+    padding-top: 150px;
+    min-height: 600px;
+    background-color: #fff;
+    /* background: linear-gradient(270deg, #F47B3D -90.08%, rgb(255, 220, 202) 114.81%); */
+    background: linear-gradient(90deg, #FFFDFC , #FFF5F1, #FDE7DB);
+}
+
+.masthead h1 {
+font-size: 56px;
+/* font-size: 48px; */
+/* line-height: 90px; */
+/* or 112% */
+
+text-transform: capitalize;
+}
+
+
+.header-form{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+    background-color: white;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.header-form input{
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.header-arrow{
+    position: absolute;
+    top: 220px;
+    right: -20px;
+}

@@ -1,0 +1,87 @@
+# ------------------------
+# ENABLE REWRITE
+# ------------------------
+RewriteEngine On
+
+# ------------------------
+# FORCE HTTPS + NON-WWW (FIXED)
+# ------------------------
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# ------------------------
+# REMOVE index.php FROM URL
+# ------------------------
+RewriteCond %{THE_REQUEST} \s/+index\.php [NC]
+RewriteRule ^index\.php$ / [L,R=301]
+
+# ------------------------
+# REDIRECT .php TO CLEAN URL
+# ------------------------
+RewriteCond %{THE_REQUEST} \s/([^\s]+)\.php [NC]
+RewriteRule ^ %1 [L,R=301]
+
+# ------------------------
+# INTERNAL PHP HANDLING (NO REDIRECT)
+# ------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# ------------------------
+# ALLOW robots.txt & sitemap.xml
+# ------------------------
+<FilesMatch "^(robots\.txt|sitemap\.xml)$">
+    Require all granted
+</FilesMatch>
+
+# ------------------------
+# 404 PAGE
+# ------------------------
+ErrorDocument 404 /404
+
+# ------------------------
+# SEO / ROBOTS
+# ------------------------
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "all"
+</IfModule>
+
+# ------------------------
+# CACHE / EXPIRES
+# ------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+
+    # IMAGES
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+
+    # CSS / JS
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+
+    # FONTS
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+</IfModule>
+
+# ------------------------
+# GZIP
+# ------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# ------------------------
+# SECURITY HEADERS
+# ------------------------
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>

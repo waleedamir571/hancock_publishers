@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'JUST Sans ExBold';
+    src: url('JUSTSans-ExBd.eot');
+    src: url('JUSTSans-ExBd.eot?#iefix') format('embedded-opentype'),
+        url('JUSTSans-ExBd.woff2') format('woff2'),
+        url('JUSTSans-ExBd.woff') format('woff'),
+        url('JUSTSans-ExBd.ttf') format('truetype'),
+        url('JUSTSans-ExBd.svg#JUSTSans-ExBd') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
