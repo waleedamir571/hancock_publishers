@@ -1380,45 +1380,6 @@ function onlyEmail($payload, $con)
 //     }
 // }
 
-function sendAdminEmail($adminSubject, $subject = 'Lead from no-reply@hancockpublishers.com')
-{
-    $mail = new PHPMailer(true);
-    try {
-        // Enable verbose debug output
-        $mail->SMTPDebug = 0;
-        // $mail->Debugoutput = 'html';
-
-        $mail->isSMTP();
-        $mail->Host = 'smtp.cybertronlabs.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'contact@cybertronlabs.com';
-        $mail->Password = 'Cybertron@2025';
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-        $mail->Port = 465;
-
-        $mail->setFrom('contact@cybertronlabs.com', 'CybertronLabs');
-
-        // Admin email only
-        $mail->addAddress('contact@cybertronlabs.com', 'Admin');
-        $mail->isHTML(true);
-        $mail->Subject = $adminSubject;
-        $mail->Body = $subject;
-
-        $result = $mail->send();
-
-        if ($result) {
-            header("Location: https://cybertronlabs.com/thank-you");
-        } else {
-            echo "Email failed to send.";
-        }
-
-    } catch (Exception $e) {
-        echo "Email error: " . $mail->ErrorInfo;
-        echo "<br>Exception: " . $e->getMessage();
-        error_log("PHPMailer Error: " . $mail->ErrorInfo);
-        error_log("Exception: " . $e->getMessage());
-    }
-}
 
 function sendEmail($message, $subject = 'Lead from no-reply@hancockpublishers.com', $to = 'info@hancockpublishers.com', $fromName = 'Hancock Publishers')
 {
@@ -1648,17 +1609,16 @@ function sendEmailWithAttachment($message, $subject = 'Lead from Hancock Publish
 // SEND SLACK
 function sendSlack($data)
 {
-    // $connection2 = new mysqli("localhost", "root", "", "animation");
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://hooks.slack.com/services/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');
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, ['payload' => $data]);
+    $ch = curl_init('https://hooks.slack.com/services/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');
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $data); // JSON string
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Content-Type: application/json']);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    $server_output = curl_exec($ch);
+    $response = curl_exec($ch);
     curl_close($ch);
-    // mysqli_query($connection2, "INSERT INTO slack(error,slack_payload) VALUES('$server_output','$data')") or die(mysqli_error($connection2));
-    return ($server_output);
+    return $response;
 }
+
 
 // CLEAN FUNCTION
 function clean($string)
